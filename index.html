@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn Implementation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-<hash>"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navi">
+      <div class="item1">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="item2">
+        <button class="upbtn">SignUp</button>
+        <button class="inbtn">LogIn</button>
+      </div>
+      <p class="para">sdnkndskd</p>
+    </nav>
+    <section class="background-main" id="home">
+      <div class="main">
+        <div class="signup">
+          <h1>Signup</h1>
+          <input id="signup-name" type="text" placeholder="Enter Your Name" />
+          <input
+            id="signup-email"
+            type="email"
+            placeholder="Enter Your Email"
+          />
+          <input
+            id="signup-password"
+            type="password"
+            placeholder="Create Password"
+            maxlength="8"
+          />
+          <button class="btn-signup-item">Signup</button>
+          <p>Already have an account?&nbsp;<a href="">Login</a></p>
+          <hr />
+          <button class="social-btn" disabled>
+            <i class="fab fa-facebook"></i><span>Login with Facebook</span>
+          </button>
+          <button class="social-btn" disabled>
+            <i class="fab fa-google"></i><span>Login with Google</span>
+          </button>
+        </div>
+      </div>
+      <div class="main1">
+        <div class="signin">
+          <h1>Login</h1>
+          <input type="email" id="login-email" placeholder="Enter Email" />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter Password"
+            maxlength="8"
+          />
+          <button class="btn-login-item">Login</button>
+          <p>Don't have an Account? &nbsp;<a id="registerLink" href="">Register</a></p>
+          <hr />
+          <button class="social-btnlog" disabled>
+            <i class="fab fa-facebook"></i><span>Login with Facebook</span>
+          </button>
+          <button class="social-btnlog" disabled>
+            <i class="fab fa-google"></i><span>Login with Google</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="container">
+      <div class="search">
+        <input type="text" id="countryInput" placeholder="Enter Country Name" />
+        <button disabled>Search</button>
+      </div>
+      <div class="countries">
+        <article class="country">
+          <img class="country__img" src="" />
+          <div class="country__data">
+            <h3 class="country__name">COUNTRY</h3>
+            <h4 class="country__region">REGION</h4>
+            <p class="country__row"><span>👫 :</span>PEOPLE</p>
+            <p class="country__row"><span>🗣️ :</span>LANG</p>
+            <p class="country__row"><span>💰 :</span>CUR</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="footer">
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+      <br />
+      <p>Designed By: Rahul Kumar Parida</p>
+    </section>
+    <marquee
+      behavior="article"
+      direction="down"
+      scrollamount="3"
+      loop="infinite"
+      ><h2>Thank You For Visit Us!!!😍</h2></marquee
+    >
+    <script src="index.js"></script>
+  </body>
+</html>

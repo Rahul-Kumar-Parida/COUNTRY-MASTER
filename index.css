@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 13vh;
+  overflow-x: hidden; /* Adjust as needed based on the height of your navbar */
+}
+.navi {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+}
+.item1 {
+  margin-left: 1rem;
+  display: flex;
+  gap: 1.4rem;
+}
+.item1 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+.item2 {
+  margin-right: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.item2 button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 5rem;
+  font-weight: 600;
+}
+
+.item2 :nth-child(1) {
+  background-color: rgb(146, 249, 146);
+}
+.item2 :nth-child(2) {
+  background-color: rgb(249, 146, 146);
+}
+
+.item2 :nth-child(1):hover {
+  background-color: rgb(93, 244, 93);
+}
+.item2 :nth-child(2):hover {
+  background-color: rgb(251, 99, 99);
+}
+.background-main {
+  background-color: rgb(16, 154, 246);
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.para {
+  visibility: hidden;
+  position: absolute;
+  color: white;
+  right: 3%;
+  font-size: 1.5rem;
+}
+h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #2a2528;
+  font-family: sans-serif;
+}
+.main {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(159, 175, 175);
+  visibility: hidden;
+}
+
+.main1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(168, 205, 183);
+  visibility: hidden;
+}
+.signup {
+  display: grid;
+  gap: 0.3rem;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  width: 25%;
+  padding: 1.3rem;
+  border-radius: 0.7rem;
+}
+.signup input {
+  height: 2rem;
+}
+
+.signup h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.signup button {
+  height: 2rem;
+  cursor: pointer;
+}
+.signup :nth-child(5) {
+  margin-top: 0.6rem;
+  background-color: #5890ff;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+.signup :nth-child(5):hover {
+  background-color: #3170f0;
+}
+.signup :nth-child(6) {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+.signup :nth-child(8) {
+  background-color: #355492;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+
+.signup :nth-child(9) {
+  color: #07193c;
+  font-size: 0.9rem;
+  background-color: white;
+  font-weight: 500;
+}
+.signup :last-child {
+  margin-bottom: 0.4rem;
+}
+.social-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+.signin {
+  display: grid;
+  gap: 0.3rem;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  width: 25%;
+  padding: 1.3rem;
+  border-radius: 0.7rem;
+}
+.signin input {
+  height: 2rem;
+}
+
+.signin h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.signin button {
+  height: 2rem;
+  cursor: pointer;
+}
+.signin :nth-child(4) {
+  margin-top: 0.6rem;
+  background-color: #5890ff;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+.signin :nth-child(4):hover {
+  background-color: #3170f0;
+}
+.signin :nth-child(5) {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+.signin :nth-child(7) {
+  background-color: #355492;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+.signin :nth-child(8) {
+  color: #07193c;
+  font-size: 0.9rem;
+  background-color: white;
+  font-weight: 500;
+}
+.signin :last-child {
+  margin-bottom: 0.4rem;
+}
+.social-btnlog {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+/*section: //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.container {
+  width: 100%;
+  height: 115vh;
+  background-color: #524949;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  height: 6vh;
+  gap: 0.4rem;
+  position: relative;
+  top: 2.8rem;
+}
+.search button {
+  width: 7rem;
+  border-radius: 2px solid black;
+  background-color: rgb(192, 243, 116);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.search button:hover {
+  background-color: greenyellow;
+  font-weight: 600;
+}
+.search input {
+  width: 17rem;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+.countries {
+  display: flex;
+  font-size: 1rem;
+  transition: opacity 1s;
+}
+
+.country {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  width: 25rem;
+  border-radius: 0.7rem;
+  margin: 0 2rem;
+  overflow: hidden;
+}
+
+.country__img {
+  width: 25rem;
+  height: 10rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+  padding: 1.5rem 2.75rem 2rem 2.75rem;
+}
+
+.country__name {
+  font-size: 2.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.country__region {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.country__row span {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* For screens smaller than 600px */
+/* CSS for screens larger than 600px */
+
+/* For screens smaller than 466px */
+@media only screen and (max-width: 466px) {
+  .navi {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item1 {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .item1 a {
+    font-size: 1.2rem;
+  }
+
+  .item2 {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .item2 button {
+    width: 100%;
+  }
+  .navi {
+    height: 14vh;
+  }
+  .background-main h2 {
+    font-size: 1.8rem;
+  }
+
+  .signup,
+  .signin {
+    width: 100%;
+  }
+
+  .search input {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .countries {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .country {
+    width: 85%;
+    margin: 0 0 2rem;
+  }
+  .para {
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    right: 8rem;
+    top: 3.4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 466px) {
+  .item1 {
+    margin-left: 1rem;
+    gap: 1.4rem;
+  }
+  .item1 a {
+    font-size: 1.5rem;
+  }
+  .item2 {
+    margin-right: 1rem;
+    gap: 1rem;
+  }
+  .item2 button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 5rem;
+  }
+}
+
+/* CSS for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .item1 {
+    margin-left: 0.8rem;
+    gap: 1rem;
+  }
+  .item1 a {
+    font-size: 1rem;
+  }
+  .item2 {
+    margin-right: 0.4rem;
+    gap: 1rem;
+  }
+  .item2 button {
+    padding: 0.3rem;
+    border-radius: 0.6rem;
+    width: 4.5rem;
+  }
+}
+
+/* CSS for screens smaller than 1000px */
+@media only screen and (max-width: 1000px) {
+  .signup,
+  .signin {
+    width: 80%; /* Adjusted width for smaller screens */
+    padding: 1.6rem; /* Reduced padding for smaller screens */
+    height: 80%;
+  }
+}
+
+/* CSS for screens larger than 1000px */
+@media only screen and (min-width: 1000px) {
+  .signup,
+  .signin {
+    width: 25%; /* Reset width for larger screens */
+    padding: 1.3rem; /* Reset padding for larger screens */
+    height: 90%;
+  }
+}
